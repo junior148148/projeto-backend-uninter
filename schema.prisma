@@ -1,0 +1,15 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Pedido {
+  id          Int      @id @default(autoincrement())
+  canalPedido String
+  status      String   @default("AGUARDANDO_PAGAMENTO")
+  criadoEm    DateTime @default(now())
+}

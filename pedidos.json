@@ -1,0 +1,14 @@
+[
+  {
+    "idPedido": 1,
+    "canalPedido": "APP",
+    "status": "AGUARDANDO_PAGAMENTO",
+    "itens": [
+      {
+        "produtoId": 101,
+        "quantidade": 2
+      }
+    ],
+    "criadoEm": "2026-09-12T18:44:42.999Z"
+  }
+]
